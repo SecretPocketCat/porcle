@@ -35,13 +35,11 @@ fn enter(mut commands: Commands) {
             children.label("LEFT or RIGHT STICK: aim ship");
             children.label("RIGHT BUMPER or CROSS/A: Shoot");
             children.label("LEFT BUMPER or SQUARE/X: Capture & release sawblade");
-            
             children.header("SHIP CYCLE CONTROLS");
             children.label("Cycle 2x clockwise: recall sawblade");
             children.label("Cycle 1x counter-clockwise: gain ammo based on current sawblade speed");
            
-            children.button("PLAY").insert(TutorialAction::Play);
-            
+            children.button("PLAY").insert(TutorialAction::Play);            
         });
 }
 
